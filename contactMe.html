@@ -9,7 +9,7 @@
   <title>Megh Dedhia | Budding Full Stack Developer</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light bck">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container">
     <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -17,8 +17,8 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
@@ -29,7 +29,7 @@
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/contactMe.html">Contact Me</a>
+            <a class="nav-link" href="contactMe.html">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -58,36 +58,46 @@
     </div>
   </nav>
 
-  <div class="conatiner">
-    <div class="jumbotron bg-info">
-      <div class="container text-center">
-        <h1 class="display-4 d-inline">Megh Dedhia</h1>
-        <div>
-          <p class="lead d-inline">Budding Full Stack Developer | Freelance Content Creator</p>
+  <div class="container my-5 border border-info rounded" style="width:75%">
+    <form class="m-2">
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="firstName">First Name</label>
+          <input id="firstName" class="form-control border border-info" type="text" placeholder="First Name">
+          <small class="text-muted form-text">*only the first name</small>
         </div>
-        <hr class="my-3">
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="card-columns" style="column-count: 1;">
-      <div class="card border-info">
-        <img class="rounded card-image-top img-fluid p-3" src="resources/img.jpeg" alt="me">
-        <div class="card-body">
-          <h1 class="card-title">About Me</h1>
-          <p class="card-text text-info ">I am a second year student at D.J Sanghvi College of Engineering, Mumbai. This is a beginner project that i have made when i completed learning front-end development.</p>
-          <a href="#" class="card-link btn btn-info">See more about me</a>
+        <div class="form-group col-sm-6">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" class="form-control border border-info" type="text" placeholder="Last Name">
         </div>
       </div>
-      <div class="card float-right border-info d-flex">
-        <div class="card-header">
-          <h1>Currently Working on...</h1>
-        </div>
-        <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label for="Email">Email</label>
+          <input id="Email" class="form-control border border-info" type="email" placeholder="Email">
         </div>
       </div>
-    </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="country">Country</label>
+          <select id="country" class="form-control border border-info">
+            <option selected>Choose a Country</option>
+            <option>India</option>
+            <option>Others..</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group input-group">
+          <label class="mr-3 mt-1" for="number">Contact No.</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text">+91</span>
+          </div>
+          <input id="number" type="number" class="form-control border border-info d-block col-4">
+        </div>
+      </div>
+      <button class="btn btn-info m-auto">Submit!</button>
+    </form>
   </div>
   
 
