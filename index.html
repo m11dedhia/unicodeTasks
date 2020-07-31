@@ -20,15 +20,19 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects
+              <span class="badge badge-info">NEW</span></a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Project 1</a>
+              <a href="/covidInfo.html" class="dropdown-item">Project 1
+                <span class="badge badge-info">NEW</span></a>
               <a href="#" class="dropdown-item">Project 2</a>
               <a href="#" class="dropdown-item">Project 3</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contactMe.html">Contact Me</a>
+            <a class="nav-link" href="/contactMe.html">Contact Me
+              <span class="badge badge-info">NEW</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -58,6 +62,7 @@
     </div>
   </nav>
 
+  <!-- Jumbotron -->
   <div class="conatiner">
     <div class="jumbotron bg-info">
       <div class="container text-center">
@@ -69,12 +74,93 @@
       </div>
     </div>
   </div>
-</div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div id="accordion-start" class="col-md-9">
+        <div id="accordion">
+          <!-- First Accordion -->
+
+          <div class="card text-center">
+            <div id="heading1" class="bg-info card-header">
+              <h5 class="mb-0 lead">
+                <button class="btn btn-dark" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  About Me
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+              <div class="card-body d-inline text-dark">
+                <p class="mx-3">
+                I am a second year Computer engineering student at Dwarkas J. Sanghvi College of Engineering.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Accordion -->
+
+          <div class="card text-center">
+            <div id="heading2" class="bg-info card-header">
+              <h5 class="mb-0 lead">
+                <button class="btn btn-dark" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                  What am i interested in?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+              <div class="card-body d-inline text-dark">
+                <p class="mx-3">
+                Currently i am interested in Web development and i barely could complete this project too. I had basic knowledge about HTML-5 as well as CSS-3. I started learning Bootstrap and Javascript during lockdown and now i am well versed with them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Accordion -->
+
+          <div class="card text-center">
+            <div id="heading3" class="bg-info card-header">
+              <h5 class="mb-0 lead">
+                <button class="btn btn-dark" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                  What do i do, apart from Web Development?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+              <div class="card-body d-inline text-dark">
+                <p class="mx-3">
+                Currently i am interested in Wbe development and i barely could complete this project too. I had basic knowledge about HTML-5 as well as CSS-3. I started learning Bootstrap and Javascript during lockdown and now i am well versed with them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-2 col card border-info bg-info">
+        <img class="my-3 card-image-top" src="resources/img.jpeg" style="width:100%">
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="sticky-footer bg-dark text-light mb-0">
+    <small class="d-block text-center lead">Copyright &copy; Megh Dedhia</small>
+    <div class="text-center">
+      <a href="#top">Back to Top</a>
+    </div>
+  </footer>
   
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="backend_task1.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
