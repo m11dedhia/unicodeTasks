@@ -9,7 +9,7 @@ fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api", {
   return response.json();
 })
 .then(rsp =>{
-  getMapping(rsp.countries_stat,rsp.statistic_taken_at,rsp.world_total);
+  document.querySelector('.world-stats').addEventListener('click', getMapping(rsp.countries_stat,rsp.statistic_taken_at,rsp.world_total));
 })
 .catch(err => {
 	console.log(err);
@@ -50,43 +50,4 @@ function getMapping(countryData,timeFrame,worldTotal){
     var cell=row.insertCell(index);
     cell.innerHTML=attribute;
   });
-
-  // var cell0=row.insertCell(0);
-  // cell0.innerHTML='Country';
-
-  // var cell1=row.insertCell(1);
-  // cell1.innerHTML='Total Cases';
-
-  // var cell2=row.insertCell(2);
-  // cell2.innerHTML='Total Deaths';
-
-  // var cell3=row.insertCell(3);
-  // cell3.innerHTML='Region';
-
-  // var cell4=row.insertCell(4);
-  // cell4.innerHTML='';
 }
-
-
-
-
-
-// var ctx = document.getElementById('myChart').getContext('2d');
-// var chart = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'pie',
-
-//     // The data for our dataset
-//     data: {
-//         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-//         datasets: [{
-//             label: 'My First dataset',
-//             backgroundColor: 'rgb(255, 99, 132)',
-//             borderColor: 'rgb(255, 99, 132)',
-//             data: [0, 10, 5, 2, 20, 30, 45]
-//         }]
-//     },
-
-//     // Configuration options go here
-//     options: {}
-// });
