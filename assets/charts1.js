@@ -37,8 +37,6 @@ function getMapping(countryData,timeFrame,worldTotal){
         }
       }
     });
-    
-    
   });
 
   var header=table.createTHead();

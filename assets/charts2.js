@@ -35,8 +35,6 @@ function getMapping(response){
         cell.innerHTML='-';
       }
     });
-    
-    
   });
 
   var header=table.createTHead();
@@ -48,6 +46,4 @@ function getMapping(response){
     var cell=row.insertCell(index);
     cell.innerHTML=attribute;
   });
-
-
 }
