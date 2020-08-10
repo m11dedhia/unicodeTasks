@@ -44,5 +44,3 @@ function sorter(list_inputs){
   }
   return dataOutput;
 }
-
-sorter(['Rashmil Panchani 99 97', 'Parag Vaid 95 93', 'Siddharth Sanghavi 98 100']);

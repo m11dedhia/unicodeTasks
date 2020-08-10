@@ -1,3 +1,5 @@
+const { builtinModules } = require("module");
+
 class listData{
   constructor(firstName,lastName,math,eng){
     this.firstName=firstName;
@@ -40,9 +42,9 @@ function sorter(list_inputs){
   }
   var dataOutput=[];
   for(let item of dataListArr){
-    dataOutput.push(item.createList(item.firstName,item.lastName,item.math,item.eng));
+    dataOutput.push(item.firstName+' '+item.lastName+' '+item.math+' '+item.eng);
   }
   return dataOutput;
 }
 
-sorter(['Rashmil Panchani 99 97', 'Parag Vaid 95 93', 'Siddharth Sanghavi 98 100']);
+module.exports={sorter:sorter};
